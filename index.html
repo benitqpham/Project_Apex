@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project: APEX</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="video-container">
+    <video class="background-video" autoplay muted loop play-sinline>
+        <source src="/images/cyberpunk-background_test3.mp4" type="video/mp4">
+    </video>
+
+    <header class="grid-header">
+        <div class="logo-container">
+         <img class="logo" src="images/Logo.jpg" alt="LOGO"/>
+        </div>
+            <nav class="navigation">
+             <ul class="nav-links">
+                    <li><a href="#home">Home</a></li> 
+                    <li><a href="#about us">About Us</a></li> 
+                    <li><a href="#solutions">Solutions</a></li> 
+                    <li><a href="#career">Career</a></li> 
+              </ul>
+          </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Search...">
+            <a href="#">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+    </header>
+    </div>
+    <nav id="hamburger-navigation">
+        <img class="logo" src="images/Logo.jpg" alt="LOGO"/>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li> 
+                <li><a href="#about us" onclick="toggleMenu()">About Us</a></li> 
+                <li><a href="#solutions" onclick="toggleMenu()">Solutions</a></li> 
+                <li><a href="#career" onclick="toggleMenu()">Career</a></li> 
+            </div>
+        </div>
+    </nav>
+    <script src="scipt.js"></script>
+    <div class="grid-container">
+        <div class="section-welcome-text">
+            <p>
+            Welcome to <strong>PROJECT: APEX</strong>, where we envision the future as a beacon of innovation and progress. 
+            Embark on a journey into a futuristic metropolis, 
+            where cutting-edge technologies and seamless automations shape every aspect of life.
+            </p>
+        <img class="section-welcome-image"/>
+    </div>
+</body>
+</html>

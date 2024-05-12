@@ -1,0 +1,264 @@
+/* General */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Grid Header */
+
+.grid-header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10%;
+    position: relative;
+    font-size: 24px;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(38, 38, 38, 0.4);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    height: 60px; 
+    padding-left: 20px; 
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+/* Navigation Bar */
+
+.navigation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    padding: 0 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s ease 0s;
+}
+
+.nav-links li a:hover {
+    background-color: transparent;
+    color: grey;
+    padding: 16px;
+    transition: all 0.5s ease 0s;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+
+/* Search Box */
+
+.search-box {
+    height: 30px;
+    display: inline-flex;
+    cursor: pointer;
+    padding: 24px 24px;
+    background: transparent;
+    border-radius: 30px;
+    align-items: center;
+    transition: all 0.7s ease;
+}
+
+.search-box:hover input {
+    width: 400px;
+}
+
+.search-box:hover {
+    cursor: auto;
+    background-color: white;
+}
+
+.search-box input {
+    width: 0;
+    outline: none;
+    border: none;
+    transition: all 0.7s ease;
+    background-color: transparent;
+}
+
+.search-box a .fas {
+    color: white;
+    font-size: 24px;
+    transition: all 0.7s ease;
+}
+
+.search-box:hover .fas {
+    color: black;
+}
+
+
+/* Background video */
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+section {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    margin-top: 1px;
+    align-items: center;
+}
+
+
+/* Hamburger Menu */
+
+#hamburger-navigation {
+    display: none;
+    position: fixed; /* Fixed positioning at the top */
+    top: 0; /* Align top edge to the top of the viewport */
+    left: 0; /* Align left edge to the left of the viewport */
+    width: 100%; /* Span the full width of the viewport */
+    color: white; /* Light text color for contrast */
+    z-index: 1000; /* High z-index to ensure it is on top of other content */
+    padding-right: 20px;
+}
+
+
+.hamburger-menu {
+    display: flex;
+    justify-content: flex-end; /* Align menu items appropriately */
+    width: 100%; /* Ensure the menu uses the full width */
+    padding: 10px 20px; /* Some padding around the menu items */
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.7s ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    transition: all 0.7s ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links a:active {
+    color: grey;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 8px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -8px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+/* What is Project: APEX */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "welcome-text welcome-image"
+    ""
+    ""
+}
+
+.section-welcome-text {
+    grid-area: welcome-text;
+    background-color: green;
+    margin: 20px;
+}
+
+.section-welcome-image {
+    grid-area: welcome-image;
+    background-color: blue;
+}
+

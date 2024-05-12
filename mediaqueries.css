@@ -1,0 +1,31 @@
+@media screen and (max-width: 940px) {
+    .grid-header {
+        display: none;
+    }
+
+    #hamburger-navigation {
+        display: flex;
+        position: fixed;
+        align-items: center;
+        justify-content: space-between; 
+        padding: 10px 120px; 
+        width: 100%; 
+        background-color: rgba(38, 38, 38, 0.4);
+    }
+
+    .menu-links {
+        position: fixed;
+        top: 80px;
+        right: 60px;   
+    }
+
+    .logo {
+        margin-right: auto; 
+        padding-left: 0; 
+    }
+
+    .hamburger-menu {
+        display: flex;
+        justify-content: flex-end; 
+    }
+}
