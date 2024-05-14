@@ -8,6 +8,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -122,7 +126,7 @@ li {
 
 /* Background video */
 
-.video-container {
+#video-container {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -242,23 +246,223 @@ section {
 
 /* What is Project: APEX */
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "welcome-text welcome-image"
-    ""
-    ""
+#welcome-container {
+    background-color: #102040;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 60px;
 }
 
-.section-welcome-text {
-    grid-area: welcome-text;
-    background-color: green;
-    margin: 20px;
+.welcome-image img {
+    height: auto;
+    margin: 0px 160px 0 0;
 }
 
-.section-welcome-image {
-    grid-area: welcome-image;
-    background-color: blue;
+.section-welcome-text p {
+    color: white;
+    width: 60%;
+    margin: 0px 0 0 160px;
+    font-size: 24px;
 }
 
+.learn-more-button {
+    padding: 10px 20px; 
+    background-color: #38DCE4; 
+    color: black;
+    border: none; 
+    border-radius: 8px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    outline: none; 
+    transition: background-color 0.3s; 
+    margin: 20px 0 0 160px;
+}
+
+.learn-more-button:hover {
+    background-color: #25969c;
+    transition: all 0.7s ease;
+}
+
+/* Our Goals */
+
+.section-our-goals {
+    background-color: #C0CBD6;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 60px;
+}
+
+.section-our-goals h1 {
+    color: black;
+    font-size: 40px;
+    margin: 0 0 20px 0;
+
+}
+
+.section-our-goals p {
+    color: black;
+    font-size: 24px;
+    margin: 0 160px 0 160px;
+
+}
+
+/* Goal 1*/
+
+.goal_1-container {
+    background-color: #0D1B36;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 60px;
+}
+
+.goal_1-image img {
+    height: auto;
+    margin: 0px 0 0 160px;
+}
+
+.goal_1-text-and-button h1 {
+    color: #38DCE4;
+    margin: 0 160px 0 60px;
+    font-size: 32px;
+}
+
+.goal_1-text-and-button p {
+    color: white;
+    margin: 0 160px 0 60px;
+    font-size: 24px;
+}
+
+.learn-more-button-right {
+    padding: 10px 20px; 
+    background-color: #38DCE4; 
+    color: black;
+    border: none; 
+    border-radius: 8px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    outline: none; 
+    transition: background-color 0.3s; 
+    margin: 20px 0 0 60px;
+}
+
+.learn-more-button-right:hover {
+    background-color: #25969c;
+    transition: all 0.7s ease;
+}
+
+/* Goal 2 */
+
+.goal_2-container {
+    background-color: #102040;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 60px;
+}
+
+.goal_2-image img {
+    height: auto;
+    margin: 0px 160px 0 0;
+}
+
+.goal_2-text p {
+    color: white;
+    width: 75%;
+    margin: 0px 0 0 160px;
+    font-size: 24px;
+}
+
+.goal_2-text h1 {
+    color: #38DCE4;
+    margin: 0 0 0 160px;
+    font-size: 32px;
+}
+
+/* Goal 3 */
+
+.goal_3-container {
+    background-color: #0D1B36;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 60px;
+}
+
+.goal_3-image img {
+    height: auto;
+    margin: 0px 0 0 160px;
+}
+
+.goal_3-text-and-button h1 {
+    color: #38DCE4;
+    margin: 0 160px 0 60px;
+    font-size: 32px;
+}
+
+.goal_3-text-and-button p {
+    color: white;
+    margin: 0 160px 0 60px;
+    font-size: 24px;
+}
+
+.learn-more-button-right {
+    padding: 10px 20px; 
+    background-color: #38DCE4; 
+    color: black;
+    border: none; 
+    border-radius: 8px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    outline: none; 
+    transition: background-color 0.3s; 
+    margin: 20px 0 0 60px;
+}
+
+.learn-more-button-right:hover {
+    background-color: #25969c;
+    transition: all 0.7s ease;
+}
+
+/* Goal 4 */
+
+.goal_4-container {
+    background-color: #102040;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 60px;
+}
+
+.goal_4-image img {
+    height: auto;
+    margin: 0px 160px 0 0;
+}
+
+.goal_4-text p {
+    color: white;
+    width: 75%;
+    margin: 0px 0 0 160px;
+    font-size: 24px;
+}
+
+.goal_4-text h1 {
+    color: #38DCE4;
+    margin: 0 0 0 160px;
+    font-size: 32px;
+}
+
+.job-placeholder {
+    background-color: #0D1B36;
+    width: 100%;
+    height: 260px;
+}
