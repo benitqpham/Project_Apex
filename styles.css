@@ -36,6 +36,7 @@ html {
     position: fixed;
     width: 100%;
     background-color: rgba(38, 38, 38, 0.4);
+    transition: all 0.3s ease-in-out;
 }
 
 .logo-container {
@@ -461,8 +462,71 @@ section {
     font-size: 32px;
 }
 
-.job-placeholder {
-    background-color: #0D1B36;
-    width: 100%;
-    height: 260px;
+/* Career */
+
+.career-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color:#102040;
+}
+
+.career-section h1 {
+    margin-bottom: 50px;
+    color: white;
+
+}
+
+.careers {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.career-card {
+    background-color:#102040;
+    border-radius: 10px;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.career-card:hover {
+    transform: scale(1.05);
+}
+
+.career-image {
+    background-color: #7a8a99;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.career-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color:#38DCE4;
+}
+
+.career-card p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.career-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.career-link:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    transform: translateY(-100%);
+    transition: transform 0.7s ease-in-out
 }

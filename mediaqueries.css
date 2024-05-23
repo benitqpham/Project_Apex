@@ -28,4 +28,8 @@
         display: flex;
         justify-content: flex-end; 
     }
+
+    .career-card {
+        width: 80%;
+    }
 }

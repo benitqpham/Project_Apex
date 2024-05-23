@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="mediaqueries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+
+</head>
 <body>
     <div id="video-container" class="video-container">
     <video class="background-video" autoplay muted loop play-sinline>
@@ -35,7 +39,7 @@
         </div>
     </header>
     </div>
-    <nav id="hamburger-navigation">
+    <nav id="hamburger-navigation" class="hamburger-navigation">
         <img class="logo" src="images/Logo.jpg" alt="LOGO"/>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
@@ -44,9 +48,9 @@
             <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#home" onclick="toggleMenu()">Home</a></li> 
-                <li><a href="#about us" onclick="toggleMenu()">About Us</a></li> 
-                <li><a href="#solutions" onclick="toggleMenu()">Solutions</a></li> 
+                <li><a href="#video-container" onclick="toggleMenu()">Home</a></li> 
+                <li><a href="#welcome-container" onclick="toggleMenu()">About Us</a></li> 
+                <li><a href="#section-our-goals" onclick="toggleMenu()">Solutions</a></li> 
                 <li><a href="#career" onclick="toggleMenu()">Career</a></li> 
             </div>
         </div>
@@ -62,11 +66,11 @@
         <button class=learn-more-button>Learn More</button>
     </div>
     <div class="welcome-image">
-        <img src="/images/illustration_1.png" alt="welcome"/>
+        <img src="/images/placeholder_2.png" alt="welcome"/>
     </div>
     </div>
     <div id= "section-our-goals" class="section-our-goals">
-        <h1>Our Goals</h1>
+        <h1>OUR GOALS</h1>
         <p>
             Project: Apex is a revolution that redefines living with futuristic technology, 
             offering a new way to experience the world. We confront temporary problems with modern solutions, 
@@ -75,7 +79,7 @@
     </div>
     <div class="goal_1-container">
         <div class="goal_1-image">
-            <img src="" alt="welcome"/>
+            <img src="/images/placeholder_1.png" alt="welcome"/>
             </div>
             <div class="goal_1-text-and-button">
             <h1>DIGITAL PRIVACY AND DATA SECURITY</h1>
@@ -156,9 +160,28 @@
         <img src="/images/placeholder_1.png" alt="welcome"/>
     </div>
     </div>
-    <div class = job-placeholder>
+    <div class="career-section">
+        <h1>CAREER</h1>
+        <div class="careers">
+            <div class="career-card">
+                <div class="career-image"></div>
+                <h2>Healthcare-Biofabrication Engineer</h2>
+                <p>An expert in biofabrication technology, specializing in the design and production of fully functioning organs using advanced bioprinting techniques to address organ donor shortages and revolutionize transplant procedures.</p>
+                <a href="#" class="career-link">to the job &rarr;</a>
+            </div>
+            <div class="career-card">
+                <div class="career-image"></div>
+                <h2>HEAD OF FOOD PRODUCTION</h2>
+                <p>A strategic leader overseeing all aspects of food cultivation and distribution, ensuring quality, sustainability, and efficiency. Responsible for developing innovative strategies to optimize yields and minimize environmental impact, while also managing production teams and fostering continuous improvement.</p>
+                <a href="#" class="career-link">to the job &rarr;</a>
+            </div>
+            <div class="career-card">
+                <div class="career-image"></div>
+                <h2>VIRTUAL REALITY EXPERIENCE DESIGNER</h2>
+                <p>Designs immersive VR experiences for education, entertainment, and training applications, ensuring engaging and impactful user experiences.</p>
+                <a href="#" class="career-link">to the job &rarr;</a>
+            </div>
+        </div>
     </div>
-    <div class="section-career">
-        <h1>Career</h1>
 </body>
 </html>
