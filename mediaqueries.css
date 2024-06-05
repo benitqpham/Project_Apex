@@ -1,4 +1,4 @@
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 900px) {
     .grid-header {
         display: none;
     }
@@ -32,4 +32,213 @@
     .career-card {
         width: 80%;
     }
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .row {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .col {
+      min-width: 100%;
+      padding: 1rem 0;
+      text-align: center; 
+  }
+
+  .col-img {
+      width: 100%; 
+      margin: 0;
+  }
+
+  .col .social a i {
+      margin-top: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .col h3 {
+      font-size: 20px; 
+  }
+
+  .col .links a, .col .social a i {
+      font-size: 14px; 
+  }
+}
+
+/* Welcome Section */
+@media (max-width: 768px) {
+  #welcome-container {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .welcome-image img {
+      margin: 0 auto; 
+  }
+
+  .section-welcome-text p {
+      width: 100%; 
+      margin: 20px 0; 
+      text-align: center; 
+  }
+
+  .learn-more-button {
+      margin: 20px auto; 
+      display: block; 
+  }
+}
+
+
+/* Our Goals */
+@media (max-width: 768px) {
+  .section-our-goals {
+      padding: 20px;
+  }
+
+  .section-our-goals h1 {
+      font-size: 32px; 
+      margin: 0 0 10px 0; 
+  }
+
+  .section-our-goals p {
+      font-size: 18px; 
+      margin: 0 20px; 
+      line-height: 150%; 
+      text-align: center;
+  }
+
+}
+
+/* Goal 1 */
+@media (max-width: 768px) {
+  .goal_1-container {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .goal_1-image img {
+      margin: 0 auto; 
+  }
+
+  .goal_1-text-and-button h1 {
+      font-size: 28px; 
+      margin: 20px 20px 10px; 
+      text-align: center;
+  }
+
+  .goal_1-text-and-button p {
+      font-size: 18px; 
+      margin: 0 20px; 
+      line-height: 150%; 
+      text-align: center;
+  }
+
+  .learn-more-button-right {
+      margin: 20px auto; 
+      display: block; 
+  }
+}
+
+/* Goal 2 */
+@media (max-width: 768px) {
+  .goal_2-container {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .goal_2-image img {
+      margin: 0 auto; 
+  }
+
+  .goal_2-text {
+      width: 100%; 
+  }
+
+  .goal_2-text h1 {
+      font-size: 28px; 
+      margin: 10px 20px; 
+      text-align: center;
+  }
+
+  .goal_2-text p {
+      font-size: 18px; 
+      margin: 0 0 0 70px;
+      line-height: 150%; 
+      text-align: center;
+  }
+
+  .learn-more-button {
+      margin: 20px auto; 
+      display: block; 
+  }
+}
+
+/* Goal 3 */
+@media (max-width: 768px) {
+  .goal_3-container {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .goal_3-image img {
+      margin: 20px auto; 
+  }
+
+  .goal_3-text-and-button h1 {
+      font-size: 28px;
+      margin: 10px 20px; 
+      text-align: center;
+  }
+
+  .goal_3-text-and-button p {
+      font-size: 18px; 
+      margin: 0 20px; 
+      line-height: 150%; 
+      text-align: center;
+  }
+
+  .learn-more-button-right {
+      margin: 20px auto; 
+      display: block; 
+  }
+}
+
+/* Goal 4 */
+@media (max-width: 768px) {
+  .goal_4-container {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .goal_4-image img {
+      margin: 20px auto; 
+  }
+
+  .goal_4-text {
+      width: 100%; 
+  }
+
+  .goal_4-text h1 {
+      font-size: 28px; 
+      margin: 10px 20px; 
+      text-align: center;
+  }
+
+  .goal_4-text p {
+      font-size: 18px; 
+      margin: 0 0 0 70px;
+      line-height: 150%; 
+      text-align: center;
+  }
+
+  .learn-more-button {
+      margin: 20px auto; 
+      display: block; 
+  }
 }
