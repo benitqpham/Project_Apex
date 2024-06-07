@@ -22,6 +22,12 @@ html {
     scroll-behavior: smooth;
 }
 
+html, body {
+    overflow-x: clip;
+}
+
+
+
 /* Grid Header */
 
 .grid-header {
@@ -29,14 +35,15 @@ html {
     grid-template-columns: auto 1fr auto;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 10%;
+    padding: 30px 5vw;
     position: relative;
     font-size: 24px;
     z-index: 1;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     background-color: rgba(38, 38, 38, 0.4);
     transition: all 0.5s ease-in-out;
+    overflow-x: hidden;
 }
 
 .logo-container {
@@ -129,7 +136,7 @@ li {
 
 #video-container {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
@@ -155,21 +162,21 @@ section {
 
 #hamburger-navigation {
     display: none;
-    position: fixed; /* Fixed positioning at the top */
-    top: 0; /* Align top edge to the top of the viewport */
-    left: 0; /* Align left edge to the left of the viewport */
-    width: 100%; /* Span the full width of the viewport */
-    color: white; /* Light text color for contrast */
-    z-index: 1000; /* High z-index to ensure it is on top of other content */
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    color: white; 
+    z-index: 1000; 
     padding-right: 20px;
 }
 
 
 .hamburger-menu {
     display: flex;
-    justify-content: flex-end; /* Align menu items appropriately */
-    width: 100%; /* Ensure the menu uses the full width */
-    padding: 10px 20px; /* Some padding around the menu items */
+    justify-content: flex-end;
+    width: 100%; 
+    padding: 10px 20px; 
 }
 
 .hamburger-icon {
@@ -254,6 +261,7 @@ section {
     align-items: center;
     width: 100%;
     padding: 60px;
+
 }
 
 .welcome-image img {
@@ -262,7 +270,8 @@ section {
 
     animation: CSSscrollReveal ease-in-out both;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 40%
+
 }
 
 .section-welcome-text p {
@@ -274,7 +283,7 @@ section {
 
     animation: CSSscrollReveal ease-in-out both;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 40%
 }
 
 .learn-more-button {
@@ -291,7 +300,7 @@ section {
 
     animation: CSSscrollReveal ease-in-out both;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 40%
 }
 
 .learn-more-button:hover {
@@ -319,8 +328,7 @@ section {
 
     animation: CSSscrollReveal ease-in-out both;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-
+    animation-range: entry 0% cover 40%
 }
 
 .section-our-goals p {
@@ -331,7 +339,7 @@ section {
 
     animation: CSSscrollReveal ease-in-out both;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 40%
 }
 
 /* Goal 1*/
@@ -351,7 +359,7 @@ section {
 
     animation: CSSscrollReveal ease-in-out both;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 40%
 }
 
 .goal_1-text-and-button h1 {
@@ -361,7 +369,7 @@ section {
 
     animation: CSSscrollReveal ease-in-out both;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 40%
 }
 
 .goal_1-text-and-button p {
@@ -372,7 +380,7 @@ section {
 
     animation: CSSscrollReveal ease-in-out both;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 40%
 }
 
 .learn-more-button-right {
@@ -388,7 +396,8 @@ section {
 
     animation: CSSscrollReveal ease-in-out both;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 40%
+
 }
 
 .learn-more-button-right:hover {
@@ -414,7 +423,7 @@ section {
 
     animation: CSSscrollReveal ease-in-out both;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 40%
 }
 
 .goal_2-text p {
@@ -426,7 +435,7 @@ section {
 
     animation: CSSscrollReveal ease-in-out both;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 40%
 }
 
 .goal_2-text h1 {
@@ -436,7 +445,7 @@ section {
 
     animation: CSSscrollReveal ease-in-out both;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 40%
 }
 
 /* Goal 3 */
@@ -456,7 +465,7 @@ section {
 
     animation: CSSscrollReveal ease-in-out both;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 40%
 }
 
 .goal_3-text-and-button h1 {
@@ -466,7 +475,7 @@ section {
 
     animation: CSSscrollReveal ease-in-out both;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 40%
 }
 
 .goal_3-text-and-button p {
@@ -477,7 +486,7 @@ section {
 
     animation: CSSscrollReveal ease-in-out both;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 40%
 }
 
 .learn-more-button-right {
@@ -492,9 +501,6 @@ section {
     transition: background-color 0.3s; 
     margin: 20px 0 0 60px;
 
-    animation: CSSscrollReveal ease-in-out both;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
 }
 
 .learn-more-button-right:hover {
@@ -519,7 +525,7 @@ section {
 
     animation: CSSscrollReveal ease-in-out both;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 40%
 }
 
 .goal_4-text p {
@@ -531,7 +537,7 @@ section {
 
     animation: CSSscrollReveal ease-in-out both;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 40%
 }
 
 .goal_4-text h1 {
@@ -541,7 +547,7 @@ section {
 
     animation: CSSscrollReveal ease-in-out both;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 40%
 }
 
 /* Infinite Carousel */
@@ -561,15 +567,12 @@ section {
     overflow: hidden;
     mask-image: linear-gradient(
         to right,
-        rgba(13, 27, 54, 0),   /* Adjusted to match the background color */
-        rgba(13, 27, 54, 1) 20%,  /* Adjusted to match the background color */
-        rgba(13, 27, 54, 1) 80%,  /* Adjusted to match the background color */
+        rgba(13, 27, 54, 0),  
+        rgba(13, 27, 54, 1) 20%,  
+        rgba(13, 27, 54, 1) 80%, 
         rgba(13, 27, 54, 0)
       );
 
-      animation: CSSscrollReveal ease-in-out both;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
   }
 
   
@@ -601,16 +604,31 @@ section {
     animation-duration: 30s;
     animation-iteration-count: infinite;
     white-space: nowrap;
+    
   }
   
   .itemLeft {
     left: max(calc(200px * 8), 100%);
     animation-name: scrollLeft;
   }
+
+  .itemLeft:hover {
+    left: max(calc(200px * 8), 100%);
+    animation-name: scrollLeft;
+    color: #38DCE4;
+    transition: all 0.3s ease-in-out;
+  }
   
   .itemRight {
     right: max(calc(200px * 8), calc(100% + 200px));
     animation-name: scrollRight;
+  }
+
+  .itemRight:hover {
+    right: max(calc(200px * 8), calc(100% + 200px));
+    animation-name: scrollRight;
+    color: #38DCE4;
+    transition: all 0.3s ease-in-out;
   }
   
   .item1 {
@@ -659,8 +677,7 @@ section {
 
     animation: CSSscrollReveal ease-in-out both;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-
+    animation-range: entry 0% cover 40%
 }
 
 .careers {
@@ -680,7 +697,7 @@ section {
 
     animation: CSSscrollReveal ease-in-out both;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 40%
 }
 
 .career-card:hover {
@@ -735,6 +752,10 @@ section {
     transition: background-color 0.3s; 
     margin-top: 60px;
     text-align: center;
+
+    animation: CSSscrollReveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%
 }
 
 .explore-jobs-button:hover {
@@ -756,6 +777,7 @@ section {
         transform: translateY(0);
     }
 }
+
 
 /* Footer */
 

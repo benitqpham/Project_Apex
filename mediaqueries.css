@@ -35,7 +35,7 @@
 }
 
 /* Footer */
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
   .container {
       flex-direction: column;
       align-items: center;
@@ -62,7 +62,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1400px) {
   .col h3 {
       font-size: 20px; 
   }
@@ -73,10 +73,10 @@
 }
 
 /* Welcome Section */
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
   #welcome-container {
       flex-direction: column;
-      padding: 20px;
+      padding: 40px 80px;
   }
 
   .welcome-image img {
@@ -97,9 +97,9 @@
 
 
 /* Our Goals */
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
   .section-our-goals {
-      padding: 20px;
+      padding: 40px 80px;
   }
 
   .section-our-goals h1 {
@@ -118,10 +118,10 @@
 }
 
 /* Goal 1 */
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
   .goal_1-container {
       flex-direction: column;
-      padding: 20px;
+      padding: 40px 80px;
   }
 
   .goal_1-image img {
@@ -148,10 +148,10 @@
 }
 
 /* Goal 2 */
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
   .goal_2-container {
       flex-direction: column;
-      padding: 20px;
+      padding: 40px 80px;
   }
 
   .goal_2-image img {
@@ -160,17 +160,18 @@
 
   .goal_2-text {
       width: 100%; 
+      text-align: center;
   }
 
   .goal_2-text h1 {
       font-size: 28px; 
       margin: 10px 20px; 
-      text-align: center;
+      text-align: center; 
   }
 
   .goal_2-text p {
       font-size: 18px; 
-      margin: 0 0 0 70px;
+      margin: 10px 20px;
       line-height: 150%; 
       text-align: center;
   }
@@ -182,10 +183,10 @@
 }
 
 /* Goal 3 */
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
   .goal_3-container {
       flex-direction: column;
-      padding: 20px;
+      padding: 40px 80px;
   }
 
   .goal_3-image img {
@@ -212,14 +213,14 @@
 }
 
 /* Goal 4 */
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
   .goal_4-container {
       flex-direction: column;
-      padding: 20px;
+      padding: 40px 80px;
   }
 
   .goal_4-image img {
-      margin: 20px auto; 
+      margin: 0 auto; 
   }
 
   .goal_4-text {
@@ -229,12 +230,12 @@
   .goal_4-text h1 {
       font-size: 28px; 
       margin: 10px 20px; 
-      text-align: center;
+      text-align: center; 
   }
 
   .goal_4-text p {
       font-size: 18px; 
-      margin: 0 0 0 70px;
+      margin: 10 20px;
       line-height: 150%; 
       text-align: center;
   }
