@@ -704,8 +704,22 @@ section {
     transform: scale(1.05);
 }
 
-.career-image {
-    background-color: #7a8a99;
+.career-image-1 {
+    background-image: url(images/career1.png);
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.career-image-2 {
+    background-image: url(images/career2.png);
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.career-image-3 {
+    background-image: url(images/career3.png);
     height: 200px;
     border-radius: 10px;
     margin-bottom: 20px;

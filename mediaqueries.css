@@ -8,7 +8,7 @@
         position: fixed;
         align-items: center;
         justify-content: space-between; 
-        padding: 10px 120px; 
+        padding: 10px 40px; 
         width: 100%; 
         background-color: rgba(38, 38, 38, 0.4);
     }
@@ -76,7 +76,7 @@
 @media (max-width: 1400px) {
   #welcome-container {
       flex-direction: column;
-      padding: 20px 20px;
+      padding: 20px 10px;
   }
 
   .welcome-image img {
@@ -99,7 +99,7 @@
 /* Our Goals */
 @media (max-width: 1400px) {
   .section-our-goals {
-      padding: 20px 20px;
+      padding: 20px 10px;
   }
 
   .section-our-goals h1 {
@@ -121,7 +121,7 @@
 @media (max-width: 1400px) {
   .goal_1-container {
       flex-direction: column;
-      padding: 20px 20px;
+      padding: 20px 10px;
   }
 
   .goal_1-image img {
@@ -151,11 +151,12 @@
 @media (max-width: 1400px) {
   .goal_2-container {
       flex-direction: column;
-      padding: 20px 20px;
+      padding: 20px 10px;
   }
 
   .goal_2-image img {
       margin: 0 auto; 
+      display: block;
   }
 
   .goal_2-text {
@@ -171,9 +172,10 @@
 
   .goal_2-text p {
       font-size: 18px; 
-      margin: 10px 20px;
+      margin: 10px auto;
       line-height: 150%; 
       text-align: center;
+      padding: 0 20px;
   }
 
   .learn-more-button {
@@ -186,7 +188,7 @@
 @media (max-width: 1400px) {
   .goal_3-container {
       flex-direction: column;
-      padding: 20px 20px;
+      padding: 20px 10px;
   }
 
   .goal_3-image img {
@@ -216,15 +218,17 @@
 @media (max-width: 1400px) {
   .goal_4-container {
       flex-direction: column;
-      padding: 20px 20px;
+      padding: 20px 10px;
   }
 
   .goal_4-image img {
       margin: 0 auto; 
+      display: block;
   }
 
   .goal_4-text {
       width: 100%; 
+      text-align: center;
   }
 
   .goal_4-text h1 {
@@ -235,13 +239,31 @@
 
   .goal_4-text p {
       font-size: 18px; 
-      margin: 10 20px;
+      margin: 10px auto;
       line-height: 150%; 
       text-align: center;
+      padding: 0 20px;
   }
 
   .learn-more-button {
       margin: 20px auto; 
       display: block; 
+  }
+}
+
+/* Career */
+
+@media (max-width: 900px) {
+
+  .career-image-3 {
+    background-image: url(images/career1_mobile.png);
+  }
+
+  .career-image-2 {
+    background-image: url(images/career2_mobile.png);
+  }
+
+  .career-image-3 {
+    background-image: url(images/career3_mobile.png);
   }
 }
