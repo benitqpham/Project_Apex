@@ -16,7 +16,7 @@
     .menu-links {
         position: fixed;
         top: 80px;
-        right: 60px;   
+        right: -10px;   
     }
 
     .logo {
