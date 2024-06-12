@@ -7,17 +7,22 @@ function toggleMenu() {
 
 // Desktop
 let lastScrollTop = 0;
-const navbar = document.querySelector(".grid-header"); // Adjust the selector to match your navigation bar
+const navbar = document.querySelector(".grid-header"); //
 
 window.addEventListener('scroll', function() {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
     if (scrollTop > lastScrollTop) {
-        // Scrolling down
         navbar.classList.add('hidden');
     } else {
-        // Scrolling up
         navbar.classList.remove('hidden');
     }
     lastScrollTop = scrollTop;
 });
+
+var loader = document.getElementById("preloader");
+window.addEventListener("load", function() {
+    loader.style.transition = 'opacity 0.5s ease-out';
+    loader.style.opacity = 0;
+
+})
