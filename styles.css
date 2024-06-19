@@ -1,6 +1,7 @@
 /* General */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @font-face {
     font-family: "Centauri"
 }
@@ -146,11 +147,11 @@ li {
 
 .background-video {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    object-fit: cover;
     z-index: -2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 section {
@@ -159,7 +160,6 @@ section {
     margin-top: 1px;
     align-items: center;
 }
-
 
 /* Hamburger Menu */
 
@@ -912,7 +912,6 @@ footer{
     height: 100vh;
     width: 100%;
     position: fixed;
-    z-index: 100;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -925,7 +924,7 @@ footer{
     font-family: "Centauri", sans-serif; 
     color: white;
     overflow: hidden;
-    animation: typing 2s steps(13, end), blink-caret .75s step-end infinite;
+    animation: typing 2s steps(13, end);
     text-align: center;
 }
 
