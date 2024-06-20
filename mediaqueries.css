@@ -150,38 +150,44 @@
 /* Goal 2 */
 @media (max-width: 1400px) {
   .goal_2-container {
-      flex-direction: column;
-      padding: 20px 10px;
-  }
+    flex-direction: column;
+    padding: 20px 10px;
+}
 
-  .goal_2-image img {
-      margin: 0 auto; 
-      display: block;
-  }
+.goal_2-image {
+    order: 1;
+    margin: 0 auto; 
+    display: block;
+}
 
-  .goal_2-text {
-      width: 100%; 
-      text-align: center;
-  }
+.goal_2-image img {
+  margin: 0 auto; 
+}
 
-  .goal_2-text h1 {
-      font-size: 28px; 
-      margin: 10px 20px; 
-      text-align: center; 
-  }
+.goal_2-text {
+    order: 2;
+    width: 100%; 
+    text-align: center;
+}
 
-  .goal_2-text p {
-      font-size: 18px; 
-      margin: 10px auto;
-      line-height: 150%; 
-      text-align: center;
-      padding: 0 20px;
-  }
+.goal_2-text h1 {
+    font-size: 28px; 
+    margin: 10px 20px; 
+    text-align: center; 
+}
 
-  .learn-more-button {
-      margin: 20px auto; 
-      display: block; 
-  }
+.goal_2-text p {
+    font-size: 18px; 
+    margin: 10px auto;
+    line-height: 150%; 
+    text-align: center;
+    padding: 0 20px;
+}
+
+.learn-more-button {
+    margin: 20px auto; 
+    display: block; 
+}
 }
 
 /* Goal 3 */
@@ -217,38 +223,46 @@
 /* Goal 4 */
 @media (max-width: 1400px) {
   .goal_4-container {
-      flex-direction: column;
-      padding: 20px 10px;
-  }
+    flex-direction: column;
+    padding: 20px 10px;
+}
 
-  .goal_4-image img {
-      margin: 0 auto; 
-      display: block;
-  }
+.goal_4-image {
+    order: 1;
+    margin: 0 auto; 
+    display: block;
+}
 
-  .goal_4-text {
-      width: 100%; 
-      text-align: center;
-  }
+.goal_4-text {
+    order: 2;
+    width: 100%; 
+    text-align: center;
+}
 
-  .goal_4-text h1 {
-      font-size: 28px; 
-      margin: 10px 20px; 
-      text-align: center; 
-  }
+.goal_4-text h1 {
+    font-size: 28px; 
+    margin: 10px 20px; 
+    text-align: center; 
+}
 
-  .goal_4-text p {
-      font-size: 18px; 
-      margin: 10px auto;
-      line-height: 150%; 
-      text-align: center;
-      padding: 0 20px;
-  }
+.goal_4-text p {
+    font-size: 18px; 
+    margin: 10px auto;
+    line-height: 150%; 
+    text-align: center;
+    padding: 0 20px;
+}
 
-  .learn-more-button {
-      margin: 20px auto; 
-      display: block; 
-  }
+.learn-more-button {
+    margin: 20px auto; 
+    display: block; 
+}
+}
+
+.goal_2-container, .goal_4-container {
+  text-align: center;     /* Centers the text elements within the container */
+  align-items: center;    /* Ensures flex items are centered in the cross axis */
+  justify-content: center; /* Centers flex items along the main axis if necessary */
 }
 
 /* Career */

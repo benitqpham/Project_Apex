@@ -172,6 +172,7 @@ section {
     color: white; 
     z-index: 1000; 
     padding-right: 20px;
+    transition: transform 0.5s ease-in-out
 }
 
 
@@ -916,6 +917,7 @@ footer{
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease-in-out;
+    z-index: 100;
 }
 
 .typed-title {
