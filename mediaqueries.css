@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Centauri"
+}
+
 @media screen and (max-width: 900px) {
     .grid-header {
         display: none;
@@ -150,14 +154,19 @@
 /* Goal 2 */
 @media (max-width: 1400px) {
   .goal_2-container {
+    display: flex;
     flex-direction: column;
     padding: 20px 10px;
+    align-items: center;
 }
 
 .goal_2-image {
+    width: 100%;
     order: 1;
     margin: 0 auto; 
-    display: block;
+    display: flex;
+    justify-content: center;
+
 }
 
 .goal_2-image img {
@@ -223,20 +232,28 @@
 /* Goal 4 */
 @media (max-width: 1400px) {
   .goal_4-container {
+    display: flex;
     flex-direction: column;
     padding: 20px 10px;
+    align-items: center;
 }
 
 .goal_4-image {
+    width: 100%;
     order: 1;
     margin: 0 auto; 
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 
 .goal_4-text {
     order: 2;
     width: 100%; 
     text-align: center;
+}
+
+.goal_4-image img {
+  margin: 0 auto; /* Centers the image */
 }
 
 .goal_4-text h1 {
@@ -257,12 +274,6 @@
     margin: 20px auto; 
     display: block; 
 }
-}
-
-.goal_2-container, .goal_4-container {
-  text-align: center;     /* Centers the text elements within the container */
-  align-items: center;    /* Ensures flex items are centered in the cross axis */
-  justify-content: center; /* Centers flex items along the main axis if necessary */
 }
 
 /* Career */
